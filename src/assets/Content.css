@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+.contentContainer{
+    background-image: url('./Images/bgimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentHeading{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin-top: 2%;
+}
+.userLists{
+    width: 80%;
+    /* background-color: aliceblue; */
+    margin-left: 10%;
+    margin-top: 2%;
+    height: 50%;
+    overflow-y: auto;
+}
+.lists{
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+    padding: 1% 2% 0% 2%;
+    font-size: 1.5rem;
+    margin-top: 3%;
+    border: 2px solid aliceblue;
+    border-radius: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+h2{
+    font-size: 35px;
+}
+.dltAllBtn{
+    /* width: 20%; */
+    margin-left: 75%;
+    margin-top: 2%;
+    /* background-color: aliceblue; */
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 760px){
+    .contentHeading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        margin-top: 2%;
+    }
+    .btn{
+        margin-top: 2%;
+    }
+    h2{
+        font-size: 25px;
+    }
+    ul li{
+        font-size: 18px;
+        margin-top: 2%;
+    }
+    .userLists{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 2%;
+        height: 70%;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .dltAllBtn{
+        /* width: 20%; */
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+        margin-top: 4%;
+        /* background-color: aliceblue; */
+    }
+}
